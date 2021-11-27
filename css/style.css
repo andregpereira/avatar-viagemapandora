@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika&display=swap");
+
+* {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  text-align: justify;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  line-height: 26px;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000,
+    1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000,
+    2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000,
+    -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000,
+    -2px -1px 0 #000;
+  font-family: "Signika", sans-serif;
+  color: #fff;
+}
+
+hr {
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 2.35rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+b {
+  color: rgb(253, 224, 57);
+}
+
+td {
+  border-left: 1px solid #dee2e6;
+  padding: 10px 20px;
+}
+
+.cabecalho {
+  background-color: #000;
+  padding: 12px 0;
+  text-align: center;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+.conteudo {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
+  width: 100%;
+  padding: 12px 0;
+}
+
+.apresentacao {
+  margin-bottom: 3rem;
+}
+
+.introducao {
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.introducao-img {
+  margin-left: 30px;
+}
+
+.introducao-img img {
+  object-fit: cover;
+  object-position: 60% 0;
+  height: 250px;
+  width: 380px;
+}
+
+.hospedar {
+  margin-bottom: 3rem;
+}
+
+.hospedar-intro {
+  margin-bottom: 1.8rem;
+}
+
+.hospedar-descricao {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.hospedar-descricao li {
+  margin-bottom: 1.4rem;
+}
+
+.hospedar-box {
+  flex-wrap: wrap;
+  padding-top: 18px;
+}
+
+.paisagem {
+  object-fit: cover;
+  height: 240px;
+  width: 240px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.paisagem:hover {
+  height: 260px;
+  width: 95%;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hospedar-img {
+  width: 50%;
+  text-align: center;
+}
+
+.resp1 {
+  text-align: center;
+  margin-top: 0.8rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.resp2 {
+  margin-bottom: 0px;
+}
+
+.descricao1 {
+  color: rgb(109, 109, 235);
+}
+
+.descricao2 {
+  color: rgb(128, 211, 34);
+}
+
+.descricao3 {
+  color: rgb(159, 185, 111);
+}
+
+.descricao4 {
+  color: rgb(226, 170, 85);
+}
+
+.formulario {
+  margin-bottom: 3rem;
+}
+
+#form {
+  padding: 0 26px;
+}
+
+.btn {
+  color: #fff;
+  margin-right: 1.6rem;
+  background-color: rgb(92, 116, 255);
+}
+
+.formHolder {
+  padding: 0 26px;
+  width: 50%;
+}
+
+.formBox {
+  flex-direction: column;
+}
+
+#resumo {
+  color: #fff;
+}
+
+.item {
+  width: 11.111111%;
+  padding: 12px 4px;
+  word-wrap: break-word;
+}
+
+td {
+  background-color: #fff;
+  color: #000;
+  text-shadow: none;
+}
+
+.rodape {
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #000;
+}
+
+.rodape p {
+  text-align: center;
+  padding: 12px;
+}
+
+@media (max-width: 1200px) {
+  .introducao {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hospedar-box {
+    justify-content: space-around;
+  }
+
+  .hospedar-img {
+    margin-bottom: 1.6rem;
+    width: 50%;
+  }
+
+  .resp3 {
+    margin-bottom: 0;
+  }
+
+  .hospedar-img p {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hospedar-descricao {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .paisagem {
+    pointer-events: none;
+  }
+
+  .paisagem:hover {
+    pointer-events: none;
+  }
+
+  .paisagem {
+    height: 220px;
+    width: 240px;
+  }
+
+  .formHolder {
+    padding: 0 18px;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+
+  .hospedar-img {
+    width: 100%;
+  }
+
+  .paisagem {
+    width: 300px;
+  }
+
+  .resp1 {
+    margin-bottom: 0;
+  }
+
+  #dados {
+    flex-direction: column;
+  }
+
+  #form {
+    padding: 0 10px;
+  }
+
+  .formHolder {
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .hospedar-descricao {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+
+  #form {
+    padding: 0 4px;
+  }
+}
+
+
+@media (max-width: 340px) {
+  .paisagem {
+    width: 240px;
+  }
+}
+
+@media (max-width: 320px) {
+  .introducao-img img {
+    height: 140px;
+    width: 200px;
+  }
+}
